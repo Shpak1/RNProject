@@ -37,23 +37,22 @@ class SideMenu extends Component {
   };
 
   render() {
-
     return (
       <View style={styles.container}>
         <View style={styles.upperButtons}>
-            <TouchableOpacity
-              onPress={this.toggleDrawer}
-              accessibilityComponentType="button"
-              style={styles.drawerButton}
-            >
-              <Text style={styles.buttonLabel}>
-                MENU
-              </Text>
-            </TouchableOpacity>
-          </View>
+          <TouchableOpacity
+            onPress={this.toggleDrawer}
+            accessibilityComponentType="button"
+            style={styles.drawerButton}
+          >
+            <Text style={styles.buttonLabel}>
+              MENU
+            </Text>
+          </TouchableOpacity>
         </View>
+      </View>
     );
   }
 }
 
-export default SideMenu
+export default SideMenu;

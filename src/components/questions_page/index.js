@@ -13,19 +13,18 @@ class QuestionPage extends Component {
   componentDidMount() {
     this.props.questionsRequest();
   }
-    render() {
-        return (
-            <View style={{ width: '100%', height: '100%', backgroundColor: 'red' }}>
-            </View>
-        );
-    }
+  render() {
+    return (
+      <View style={{ width: '100%', height: '100%', backgroundColor: 'red' }} />
+    );
+  }
 }
 
 export default connect(
-  (state) => ({
-      questionsList: state.questionsList,
+  state => ({
+    questionsList: state.questionsList,
   }),
   dispatch => ({
-      questionsRequest: bindActionCreators(questionsRequest, dispatch),
+    questionsRequest: bindActionCreators(questionsRequest, dispatch),
   })
-)(QuestionPage)
+)(QuestionPage);

@@ -1,5 +1,5 @@
 /* @flow */
-import { types } from './constants';
+import * as types from './constants';
 
 export const loginRequest = (userName, password) =>
   ({ type: types.LOGIN.REQUEST, credentials: { userName, password } });
